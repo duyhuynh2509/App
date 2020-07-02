@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,17 +25,15 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import {Provider} from 'react-redux';
 import store from './src/store';
-import FoodCart from './FoodCart'
+import FoodCart from './FoodCart';
 
-
-
-class App extends Component{
+class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <FoodCart/>
+        <FoodCart />
       </Provider>
-    )
+    );
   }
 }
 
